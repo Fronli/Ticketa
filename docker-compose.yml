@@ -7,7 +7,7 @@ services:
       - "3000:3000"
     restart: always
     env_file:
-      - ./backend/.env
+      - .env
     volumes:
       - ./backend/src/public/uploads:/app/backend/public/uploads
       - ./backend/src/public/images:/app/backend/public/images
